@@ -1,9 +1,12 @@
+
+/// <reference types="vite/client" />
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import login from '../views/login.vue'
 
 const routes: Array<RouteRecordRaw> = [
     {
         path: '/',
+        name: 'login',
         component: login
     }
     /*,
