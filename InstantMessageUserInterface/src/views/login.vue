@@ -1,12 +1,12 @@
 <template>
   <div class="login">
     <div class="container">
-      <el-row>
+      <el-row class="layout">
         <el-col :span="15">
-          <div class="grid-content ep-bg-purple" />
+          1
         </el-col>
         <el-col :span="9">
-          <div class="grid-content ep-bg-purple-light" />
+          2
         </el-col>
       </el-row>
     </div>
@@ -20,12 +20,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.container {
+  display: flex;
+  width: 100%;
+  .layout {
+    width: 100%;
+  }
+}
 .login {
   display: flex;
   width: 100%;
   height: 100vh;
   align-items: center;
   justify-content: center;
-  background: #cecfff;
+  background: #CECFFF;
 }
 </style>
